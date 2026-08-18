@@ -1,0 +1,118 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "PEP_484",
+      "label": "PEP",
+      "title": "Type Hints",
+      "pep_number": "484"
+    },
+    {
+      "id": "Feature_484_Core",
+      "label": "Feature",
+      "description": ":pep:`3107` introduced syntax for function annotations, but the semantics\nwere deliberately left undefined.  There has now been enough 3rd party\nusage for static type analysis that the community would..."
+    },
+    {
+      "id": "Rej_484_0",
+      "label": "RejectedIdea",
+      "reason": "During discussion of earlier drafts of this PEP, various objections were raised and alternatives were proposed.  We discuss some of these here and exp"
+    },
+    {
+      "id": "PEP_526",
+      "label": "PEP",
+      "title": "Syntax for Variable Annotations",
+      "pep_number": "526"
+    },
+    {
+      "id": "Feature_526_Core",
+      "label": "Feature",
+      "description": "This PEP adds syntax to Python for annotating variable types...."
+    },
+    {
+      "id": "Rej_526_0",
+      "label": "RejectedIdea",
+      "reason": "* Automatically checking assignment types at runtime."
+    },
+    {
+      "id": "PEP_544",
+      "label": "PEP",
+      "title": "Protocols: Structural subtyping",
+      "pep_number": "544"
+    },
+    {
+      "id": "Feature_544_Core",
+      "label": "Feature",
+      "description": "This PEP proposes a way to define structural subtyping (Protocols)...."
+    },
+    {
+      "id": "PEP_589",
+      "label": "PEP",
+      "title": "TypedDict: Type Hints for Dictionaries",
+      "pep_number": "589"
+    },
+    {
+      "id": "Feature_589_Core",
+      "label": "Feature",
+      "description": "This PEP proposes TypedDict to support type hints for dictionaries with fixed keys...."
+    },
+    {
+      "id": "Rej_589_0",
+      "label": "RejectedIdea",
+      "reason": "* Runtime validation of key-value dictionary types. TypedDict is strictly a static analysis feature."
+    }
+  ],
+  "links": [
+    {
+      "relation": "INTRODUCES",
+      "source": "PEP_484",
+      "target": "Feature_484_Core"
+    },
+    {
+      "relation": "REJECTS_ALTERNATIVE",
+      "source": "PEP_484",
+      "target": "Rej_484_0"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "PEP_526",
+      "target": "PEP_484"
+    },
+    {
+      "relation": "INTRODUCES",
+      "source": "PEP_526",
+      "target": "Feature_526_Core"
+    },
+    {
+      "relation": "REJECTS_ALTERNATIVE",
+      "source": "PEP_526",
+      "target": "Rej_526_0"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "PEP_544",
+      "target": "PEP_484"
+    },
+    {
+      "relation": "INTRODUCES",
+      "source": "PEP_544",
+      "target": "Feature_544_Core"
+    },
+    {
+      "relation": "REQUIRES",
+      "source": "PEP_589",
+      "target": "PEP_484"
+    },
+    {
+      "relation": "INTRODUCES",
+      "source": "PEP_589",
+      "target": "Feature_589_Core"
+    },
+    {
+      "relation": "REJECTS_ALTERNATIVE",
+      "source": "PEP_589",
+      "target": "Rej_589_0"
+    }
+  ]
+}
